@@ -58,6 +58,12 @@
     <Compile Include="Entidades\EstadoCivil.cs" />
     <Compile Include="Entidades\Paciente.cs" />
     <Compile Include="Entidades\TipoDocumento.cs" />
+    <Compile Include="ListadoPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoPacientes.Designer.cs">
+      <DependentUpon>ListadoPacientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Paciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ListadoPacientes.resx">
+      <DependentUpon>ListadoPacientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Paciente.resx">
       <DependentUpon>Paciente.cs</DependentUpon>
     </EmbeddedResource>

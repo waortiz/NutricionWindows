@@ -34,6 +34,17 @@
             this.txtPrimerNombre = new System.Windows.Forms.TextBox();
             this.lblPrimerNonbre = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.lblEstadoCivil = new System.Windows.Forms.Label();
+            this.cboEstadoCivil = new System.Windows.Forms.ComboBox();
+            this.chkBeneficiario = new System.Windows.Forms.CheckBox();
+            this.lblSegundoApellido = new System.Windows.Forms.Label();
+            this.txtSegundoApellido = new System.Windows.Forms.TextBox();
+            this.lblPrimerApellido = new System.Windows.Forms.Label();
+            this.txtPrimerApellido = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtSegundoNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cboTipoDocumento = new System.Windows.Forms.ComboBox();
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
@@ -42,17 +53,7 @@
             this.txtNumeroDocumento = new System.Windows.Forms.TextBox();
             this.erpMensaje = new System.Windows.Forms.ErrorProvider(this.components);
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtSegundoNombre = new System.Windows.Forms.TextBox();
-            this.lblSegundoApellido = new System.Windows.Forms.Label();
-            this.txtSegundoApellido = new System.Windows.Forms.TextBox();
-            this.lblPrimerApellido = new System.Windows.Forms.Label();
-            this.txtPrimerApellido = new System.Windows.Forms.TextBox();
-            this.chkBeneficiario = new System.Windows.Forms.CheckBox();
-            this.lblEstadoCivil = new System.Windows.Forms.Label();
-            this.cboEstadoCivil = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.btnVerListado = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.erpMensaje)).BeginInit();
             this.SuspendLayout();
@@ -113,6 +114,106 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Básicos";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(412, 231);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 13);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Teléfono";
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtTelefono.Location = new System.Drawing.Point(546, 224);
+            this.txtTelefono.MaxLength = 20;
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(200, 20);
+            this.txtTelefono.TabIndex = 18;
+            // 
+            // lblEstadoCivil
+            // 
+            this.lblEstadoCivil.AutoSize = true;
+            this.lblEstadoCivil.Location = new System.Drawing.Point(15, 223);
+            this.lblEstadoCivil.Name = "lblEstadoCivil";
+            this.lblEstadoCivil.Size = new System.Drawing.Size(61, 13);
+            this.lblEstadoCivil.TabIndex = 17;
+            this.lblEstadoCivil.Text = "Estado civil";
+            // 
+            // cboEstadoCivil
+            // 
+            this.cboEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstadoCivil.FormattingEnabled = true;
+            this.cboEstadoCivil.Location = new System.Drawing.Point(149, 223);
+            this.cboEstadoCivil.Name = "cboEstadoCivil";
+            this.cboEstadoCivil.Size = new System.Drawing.Size(200, 21);
+            this.cboEstadoCivil.TabIndex = 16;
+            // 
+            // chkBeneficiario
+            // 
+            this.chkBeneficiario.AutoSize = true;
+            this.chkBeneficiario.Location = new System.Drawing.Point(415, 178);
+            this.chkBeneficiario.Name = "chkBeneficiario";
+            this.chkBeneficiario.Size = new System.Drawing.Size(81, 17);
+            this.chkBeneficiario.TabIndex = 15;
+            this.chkBeneficiario.Text = "Beneficiario";
+            this.chkBeneficiario.UseVisualStyleBackColor = true;
+            // 
+            // lblSegundoApellido
+            // 
+            this.lblSegundoApellido.AutoSize = true;
+            this.lblSegundoApellido.Location = new System.Drawing.Point(412, 84);
+            this.lblSegundoApellido.Name = "lblSegundoApellido";
+            this.lblSegundoApellido.Size = new System.Drawing.Size(89, 13);
+            this.lblSegundoApellido.TabIndex = 14;
+            this.lblSegundoApellido.Text = "Segundo apellido";
+            // 
+            // txtSegundoApellido
+            // 
+            this.txtSegundoApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtSegundoApellido.Location = new System.Drawing.Point(546, 81);
+            this.txtSegundoApellido.Name = "txtSegundoApellido";
+            this.txtSegundoApellido.Size = new System.Drawing.Size(200, 20);
+            this.txtSegundoApellido.TabIndex = 13;
+            this.ttMensaje.SetToolTip(this.txtSegundoApellido, "Por favor ingrese el primer nombre");
+            // 
+            // lblPrimerApellido
+            // 
+            this.lblPrimerApellido.AutoSize = true;
+            this.lblPrimerApellido.Location = new System.Drawing.Point(15, 81);
+            this.lblPrimerApellido.Name = "lblPrimerApellido";
+            this.lblPrimerApellido.Size = new System.Drawing.Size(75, 13);
+            this.lblPrimerApellido.TabIndex = 12;
+            this.lblPrimerApellido.Text = "Primer apellido";
+            // 
+            // txtPrimerApellido
+            // 
+            this.txtPrimerApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtPrimerApellido.Location = new System.Drawing.Point(149, 78);
+            this.txtPrimerApellido.Name = "txtPrimerApellido";
+            this.txtPrimerApellido.Size = new System.Drawing.Size(200, 20);
+            this.txtPrimerApellido.TabIndex = 11;
+            this.ttMensaje.SetToolTip(this.txtPrimerApellido, "Por favor ingrese el primer apellido");
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(412, 33);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Segundo nombre";
+            // 
+            // txtSegundoNombre
+            // 
+            this.txtSegundoNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtSegundoNombre.Location = new System.Drawing.Point(546, 30);
+            this.txtSegundoNombre.Name = "txtSegundoNombre";
+            this.txtSegundoNombre.Size = new System.Drawing.Size(200, 20);
+            this.txtSegundoNombre.TabIndex = 9;
+            this.ttMensaje.SetToolTip(this.txtSegundoNombre, "Por favor ingrese el segundo nombre");
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -171,115 +272,27 @@
             // 
             this.erpMensaje.ContainerControl = this;
             // 
-            // label3
+            // btnVerListado
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(412, 33);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 13);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Segundo nombre";
-            // 
-            // txtSegundoNombre
-            // 
-            this.txtSegundoNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtSegundoNombre.Location = new System.Drawing.Point(546, 30);
-            this.txtSegundoNombre.Name = "txtSegundoNombre";
-            this.txtSegundoNombre.Size = new System.Drawing.Size(200, 20);
-            this.txtSegundoNombre.TabIndex = 9;
-            this.ttMensaje.SetToolTip(this.txtSegundoNombre, "Por favor ingrese el segundo nombre");
-            // 
-            // lblSegundoApellido
-            // 
-            this.lblSegundoApellido.AutoSize = true;
-            this.lblSegundoApellido.Location = new System.Drawing.Point(412, 84);
-            this.lblSegundoApellido.Name = "lblSegundoApellido";
-            this.lblSegundoApellido.Size = new System.Drawing.Size(89, 13);
-            this.lblSegundoApellido.TabIndex = 14;
-            this.lblSegundoApellido.Text = "Segundo apellido";
-            // 
-            // txtSegundoApellido
-            // 
-            this.txtSegundoApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtSegundoApellido.Location = new System.Drawing.Point(546, 81);
-            this.txtSegundoApellido.Name = "txtSegundoApellido";
-            this.txtSegundoApellido.Size = new System.Drawing.Size(200, 20);
-            this.txtSegundoApellido.TabIndex = 13;
-            this.ttMensaje.SetToolTip(this.txtSegundoApellido, "Por favor ingrese el primer nombre");
-            // 
-            // lblPrimerApellido
-            // 
-            this.lblPrimerApellido.AutoSize = true;
-            this.lblPrimerApellido.Location = new System.Drawing.Point(15, 81);
-            this.lblPrimerApellido.Name = "lblPrimerApellido";
-            this.lblPrimerApellido.Size = new System.Drawing.Size(75, 13);
-            this.lblPrimerApellido.TabIndex = 12;
-            this.lblPrimerApellido.Text = "Primer apellido";
-            // 
-            // txtPrimerApellido
-            // 
-            this.txtPrimerApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtPrimerApellido.Location = new System.Drawing.Point(149, 78);
-            this.txtPrimerApellido.Name = "txtPrimerApellido";
-            this.txtPrimerApellido.Size = new System.Drawing.Size(200, 20);
-            this.txtPrimerApellido.TabIndex = 11;
-            this.ttMensaje.SetToolTip(this.txtPrimerApellido, "Por favor ingrese el primer apellido");
-            // 
-            // chkBeneficiario
-            // 
-            this.chkBeneficiario.AutoSize = true;
-            this.chkBeneficiario.Location = new System.Drawing.Point(415, 178);
-            this.chkBeneficiario.Name = "chkBeneficiario";
-            this.chkBeneficiario.Size = new System.Drawing.Size(81, 17);
-            this.chkBeneficiario.TabIndex = 15;
-            this.chkBeneficiario.Text = "Beneficiario";
-            this.chkBeneficiario.UseVisualStyleBackColor = true;
-            // 
-            // lblEstadoCivil
-            // 
-            this.lblEstadoCivil.AutoSize = true;
-            this.lblEstadoCivil.Location = new System.Drawing.Point(15, 223);
-            this.lblEstadoCivil.Name = "lblEstadoCivil";
-            this.lblEstadoCivil.Size = new System.Drawing.Size(61, 13);
-            this.lblEstadoCivil.TabIndex = 17;
-            this.lblEstadoCivil.Text = "Estado civil";
-            // 
-            // cboEstadoCivil
-            // 
-            this.cboEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEstadoCivil.FormattingEnabled = true;
-            this.cboEstadoCivil.Location = new System.Drawing.Point(149, 223);
-            this.cboEstadoCivil.Name = "cboEstadoCivil";
-            this.cboEstadoCivil.Size = new System.Drawing.Size(200, 21);
-            this.cboEstadoCivil.TabIndex = 16;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(412, 231);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 13);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Teléfono";
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtTelefono.Location = new System.Drawing.Point(546, 224);
-            this.txtTelefono.MaxLength = 20;
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(200, 20);
-            this.txtTelefono.TabIndex = 18;
+            this.btnVerListado.Location = new System.Drawing.Point(589, 361);
+            this.btnVerListado.Name = "btnVerListado";
+            this.btnVerListado.Size = new System.Drawing.Size(153, 29);
+            this.btnVerListado.TabIndex = 4;
+            this.btnVerListado.Text = "Ver listado";
+            this.btnVerListado.UseVisualStyleBackColor = true;
+            this.btnVerListado.Click += new System.EventHandler(this.btnVerListado_Click);
             // 
             // Paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(911, 402);
+            this.Controls.Add(this.btnVerListado);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnGuardar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Paciente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paciente";
             this.Load += new System.EventHandler(this.Paciente_Load);
             this.groupBox1.ResumeLayout(false);
@@ -314,6 +327,7 @@
         private System.Windows.Forms.ComboBox cboEstadoCivil;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.Button btnVerListado;
     }
 }
 

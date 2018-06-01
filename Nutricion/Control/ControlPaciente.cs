@@ -23,5 +23,10 @@ namespace Nutricion.Control
         {
             return AccesoDatosPaciente.ObtenerEstadosCiviles();
         }
+
+        internal static List<Entidades.Paciente> ObtenerPacientes()
+        {
+            return AccesoDatosPaciente.ObtenerPacientes();
+        }
     }
 }

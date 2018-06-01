@@ -26,5 +26,10 @@ namespace Datos
         {
             return context.EstadosCiviles.ToList();
         }
+
+        internal static List<Paciente> ObtenerPacientes()
+        {
+            return context.Pacientes.ToList();
+        }
     }
 }

@@ -87,5 +87,11 @@ namespace Nutricion
                 erpMensaje.SetError(dtpFechaNacimiento, string.Empty);
             }
         }
+
+        private void btnVerListado_Click(object sender, EventArgs e)
+        {
+            ListadoPacientes form = new ListadoPacientes();
+            form.ShowDialog();
+        }
     }
 }
