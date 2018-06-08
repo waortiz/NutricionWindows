@@ -28,5 +28,15 @@ namespace Nutricion.Control
         {
             return AccesoDatosPaciente.ObtenerPacientes();
         }
+
+        internal static List<Entidades.Paciente> ConsultarPacientes(long? numeroDocumento, string primerNombre, string segundoNombre, string primerApellido, string segundoApellido)
+        {
+            return AccesoDatosPaciente.ObtenerPacientes(numeroDocumento, primerNombre, segundoNombre, primerApellido, segundoApellido);
+        }
+
+        internal static void EliminarPaciente(long idPaciente)
+        {
+            AccesoDatosPaciente.EliminarPaciente(idPaciente);
+        }
     }
 }

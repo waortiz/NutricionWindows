@@ -63,7 +63,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(761, 361);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(125, 29);
-            this.btnGuardar.TabIndex = 0;
+            this.btnGuardar.TabIndex = 11;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -74,7 +74,7 @@
             this.txtPrimerNombre.Location = new System.Drawing.Point(149, 27);
             this.txtPrimerNombre.Name = "txtPrimerNombre";
             this.txtPrimerNombre.Size = new System.Drawing.Size(200, 20);
-            this.txtPrimerNombre.TabIndex = 1;
+            this.txtPrimerNombre.TabIndex = 0;
             this.ttMensaje.SetToolTip(this.txtPrimerNombre, "Por favor ingrese el primer nombre");
             // 
             // lblPrimerNonbre
@@ -130,7 +130,7 @@
             this.txtTelefono.MaxLength = 20;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(200, 20);
-            this.txtTelefono.TabIndex = 18;
+            this.txtTelefono.TabIndex = 9;
             // 
             // lblEstadoCivil
             // 
@@ -145,10 +145,11 @@
             // 
             this.cboEstadoCivil.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEstadoCivil.FormattingEnabled = true;
+            this.cboEstadoCivil.ItemHeight = 13;
             this.cboEstadoCivil.Location = new System.Drawing.Point(149, 223);
             this.cboEstadoCivil.Name = "cboEstadoCivil";
             this.cboEstadoCivil.Size = new System.Drawing.Size(200, 21);
-            this.cboEstadoCivil.TabIndex = 16;
+            this.cboEstadoCivil.TabIndex = 9;
             // 
             // chkBeneficiario
             // 
@@ -156,7 +157,7 @@
             this.chkBeneficiario.Location = new System.Drawing.Point(415, 178);
             this.chkBeneficiario.Name = "chkBeneficiario";
             this.chkBeneficiario.Size = new System.Drawing.Size(81, 17);
-            this.chkBeneficiario.TabIndex = 15;
+            this.chkBeneficiario.TabIndex = 7;
             this.chkBeneficiario.Text = "Beneficiario";
             this.chkBeneficiario.UseVisualStyleBackColor = true;
             // 
@@ -175,7 +176,7 @@
             this.txtSegundoApellido.Location = new System.Drawing.Point(546, 81);
             this.txtSegundoApellido.Name = "txtSegundoApellido";
             this.txtSegundoApellido.Size = new System.Drawing.Size(200, 20);
-            this.txtSegundoApellido.TabIndex = 13;
+            this.txtSegundoApellido.TabIndex = 3;
             this.ttMensaje.SetToolTip(this.txtSegundoApellido, "Por favor ingrese el primer nombre");
             // 
             // lblPrimerApellido
@@ -193,7 +194,7 @@
             this.txtPrimerApellido.Location = new System.Drawing.Point(149, 78);
             this.txtPrimerApellido.Name = "txtPrimerApellido";
             this.txtPrimerApellido.Size = new System.Drawing.Size(200, 20);
-            this.txtPrimerApellido.TabIndex = 11;
+            this.txtPrimerApellido.TabIndex = 2;
             this.ttMensaje.SetToolTip(this.txtPrimerApellido, "Por favor ingrese el primer apellido");
             // 
             // label3
@@ -211,7 +212,7 @@
             this.txtSegundoNombre.Location = new System.Drawing.Point(546, 30);
             this.txtSegundoNombre.Name = "txtSegundoNombre";
             this.txtSegundoNombre.Size = new System.Drawing.Size(200, 20);
-            this.txtSegundoNombre.TabIndex = 9;
+            this.txtSegundoNombre.TabIndex = 1;
             this.ttMensaje.SetToolTip(this.txtSegundoNombre, "Por favor ingrese el segundo nombre");
             // 
             // label2
@@ -230,7 +231,7 @@
             this.cboTipoDocumento.Location = new System.Drawing.Point(149, 128);
             this.cboTipoDocumento.Name = "cboTipoDocumento";
             this.cboTipoDocumento.Size = new System.Drawing.Size(200, 21);
-            this.cboTipoDocumento.TabIndex = 7;
+            this.cboTipoDocumento.TabIndex = 4;
             // 
             // dtpFechaNacimiento
             // 
@@ -265,7 +266,7 @@
             this.txtNumeroDocumento.MaxLength = 20;
             this.txtNumeroDocumento.Name = "txtNumeroDocumento";
             this.txtNumeroDocumento.Size = new System.Drawing.Size(200, 20);
-            this.txtNumeroDocumento.TabIndex = 3;
+            this.txtNumeroDocumento.TabIndex = 5;
             this.txtNumeroDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeroDocumento_KeyPress);
             // 
             // erpMensaje
@@ -277,7 +278,7 @@
             this.btnVerListado.Location = new System.Drawing.Point(589, 361);
             this.btnVerListado.Name = "btnVerListado";
             this.btnVerListado.Size = new System.Drawing.Size(153, 29);
-            this.btnVerListado.TabIndex = 4;
+            this.btnVerListado.TabIndex = 10;
             this.btnVerListado.Text = "Ver listado";
             this.btnVerListado.UseVisualStyleBackColor = true;
             this.btnVerListado.Click += new System.EventHandler(this.btnVerListado_Click);
